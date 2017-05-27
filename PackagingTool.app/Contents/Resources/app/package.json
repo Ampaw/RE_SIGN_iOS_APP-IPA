@@ -1,0 +1,23 @@
+{
+  "name": "PackagingTool",
+  "version": "1.0.0",
+  "description": "A auto package Electron application",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "pack": "electron-packager ./ PackagingTool --platform=darwin --arch=x64 ./OutApp --overwrite --ignore=./node_modules/* --ignore=./dist --icon=./app/img/icon/icon.icnc"
+  },
+  "keywords": [
+    "Electron",
+    "quick",
+    "start",
+    "tutorial",
+    "demo"
+  ],
+  "author": "lastyear",
+  "license": "CC0-1.0",
+  "devDependencies": {
+    "electron": "~1.6.2",
+    "electron-packager": "^8.7.0"
+  }
+}

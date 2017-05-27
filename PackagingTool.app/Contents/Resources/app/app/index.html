@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>打包工具</title>
+	<link rel="stylesheet" type="text/css" href="./layout.css">
+	<script type="text/javascript" src="./action.js"></script>
+
+	
+</head>
+
+<body>
+
+<!-- 头部开始 -->
+<header id="header">
+	<div id="headerName">广告打包工具</div>
+</header>
+<!-- 头部结束 -->
+
+<!-- 左边开始 -->
+<div class="leftContent" >
+
+<!-- icon -->
+<div class="icon" id="icon_id"  onclick="selectIcon()" ><br/>点击选择icon
+</div>
+<div><br/><b class="iconName">游戏图标</b></div><br/><br/>
+
+<!-- logo -->
+<div class="icon" id ="logo_id" onclick="selectLogo()"><br/>点击选择logo</div>
+<b class="iconName" >游戏logo</b>
+
+</div>
+<!-- 左边结束 -->
+
+<!-- 右边开始 -->
+	<section id="section">	
+
+	<div>
+		<form >
+		<!-- <input type="file" id="xFile" style="position:absolute;clip:rec`(0 0 0 0);"> -->
+		<input type="text" name="packagePath" id="spackage" disabled="ture"><button class="spButton" type="button" onclick="selectPackage()" id="select_pack">选择游戏包</button>
+		</form>
+	</div>
+
+	<div>
+		<br/>
+		<b>选择广告渠道</b>
+		<form action="">
+			<select class="pulldown" id="schannel" name="channel">
+			<option value="1">1</option>
+			</select>
+		</form>
+	</div>
+
+	<div>
+		<br/>
+		<form>
+			<input id="spackage" type="text" name="adAction"><button disabled="ture" class="spButton" onclick="addAction() ">添加活动</button>
+		</form>
+	</div>
+	<div>
+		<br/>
+		<b>certificate</b>
+		<form action="">
+			<select class="pulldown" id="certificate" onchange="selectedCerAction(this[selectedIndex].text)" >
+				<option value="null">RESIGN</option>
+			</select>
+		</form>
+	</div>
+
+	<div>
+		<br/>
+		<b>mobileprovision</b>
+		<form action="">
+			<select class="pulldown" id="mobileprovision">
+				<option value="null">PROVISION</option>
+			</select>
+		</form>
+	</div>
+
+	<div>
+		<br/>
+		<button class="bbutton" id="add_config" onclick="addConfigFile()">添加配置文件</button>
+
+	</div>
+
+	<div>
+		<br/>
+		<button class="bbutton" onclick="reset()" id="reset">恢复默认值</button>
+
+	</div>
+
+	<div>
+		<br/>
+		<button class="bbutton" id="autopackage_button" onclick="autoPackage()">签名打包</button>
+
+	</div>
+	
+
+</section>
+<!-- 右边结束 -->
+
+
+
+<!-- 尾部开始-->
+	<footer id="footer">
+		<div id="fLeft"></div>
+		<div id="fright">
+			<div id="copyright">Copyright © 2017-2099  十一点睡先生   All Rights Reserved</div>
+		</div>
+	</footer>
+<!-- 尾部结束 -->
+
+</body>
+
+</html>

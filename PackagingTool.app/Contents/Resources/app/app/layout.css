@@ -1,0 +1,127 @@
+
+* {-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box;padding: 0;margin:0;}
+body
+{background-color:#F0F0F0;}
+
+
+/*头部开始*/
+#header
+{width:100%;height:50px;position:relative;top:0;border-radius:15px;border:solid 1px #FFFFFF; }
+
+#headerName
+{text-align: center;color:#000000;font-family:Sans-serif;font-size:32px;position:relative;}
+
+/*头部结束*/
+
+/*左边开始*/
+div.leftContent
+{position:relative;width:20%;height:100%;float:left;top:5px;border-radius:30px;border:solid 1px #FFFFFF; }
+
+.icon{
+	position: relative;
+	width:60%;
+	height:100px;
+	left: 20%;
+	border:solid #BEBEBE 1px;
+	font-size:18px;
+	color: gray;
+	text-align:center;
+	border-radius:20px;
+}
+#icon_id{
+	top:20px;
+}
+
+.iconName{
+
+	position: relative;
+	text-align:center;
+	left: 30%;
+	color: gray;
+}
+
+
+/*左边结束*/
+
+/*右边开始*/
+#section 
+{display:inline-block;position:relative;width:75%;top:5px;padding:3%;bottom:0;border-radius:30px;border:solid 1px #FFFFFF; }
+
+#spackage 
+{width:80%;position:relative;top:20%;background:white;height:45px;font-size: 16px;}
+
+select.pulldown 
+{width:100%;position:relative;top:20%;background:white;height:45px;font-size: 16px;
+text-align: center;
+}
+
+#gameName 
+{width:80%;position:relative;top:20%;background:white;height:45px;font-size: 16px;text-align: center;}
+
+.spButton
+{
+	width:100px;
+	height:45px;
+	opacity:0.7; 
+	font-size:14px;
+
+}
+button.unablebutton
+{
+	width:100px;
+	height:45px;
+	font-size:14px;
+
+
+}
+
+
+.bbutton
+{
+	width: 100%;
+	position: relative;;
+	left: 0;
+	height:40px;
+	background:	#3D7878;
+	font-size:20px;
+}
+/*右边结束*/
+
+/*尾部开始*/
+#footer
+{
+	position:relative;
+	height:70px;
+	background-color:#F0F0F0;
+	border-radius:10px;
+	border:solid 1px #FFFFFF; 
+	bottom:0;
+
+}
+#fLeft
+{
+	position:absolute;
+	width:30%;
+	height:70px;
+}
+#fright
+{
+	position:absolute;
+	width:70%;
+	left:30%;
+	height:70px;
+	font-size:16px;
+}
+#copyright
+{
+	position:relative;
+	left:0;
+	top:45px;
+	color:gray;
+}
+
+/*尾部结束*/
+
+
+
+
